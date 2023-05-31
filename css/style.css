@@ -136,6 +136,7 @@ body{
     .card{
         padding-right: 5px;
         padding-left: 5px;
+        width: 100%;
     }
     .search input{
         margin-right: 0px;
