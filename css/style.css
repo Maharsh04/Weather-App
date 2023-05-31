@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4CA1AF;
+}
+
+.card{
+    width: 90%;
+    background: linear-gradient( 220deg,#005fff,  #42Fe99);
+    max-width: 470px;
+    margin: 100px auto 0px;
+    border-radius: 20px;
+    padding: 30px 35px;
+    text-align: center;
+    filter: drop-shadow(10px,10px, 10px);
+   
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-right: 15px;
+    font-size: 15px;
+    background-color: rgb(240, 240, 239) ;
+    color: black;
+    font-weight: 600;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(240, 240, 239);
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.search button img{
+    width: 15px;
+    margin: auto;
+}
+.search button:active{
+    transform: translateY(5px);
+    background-color: grey;
+}
+.weather{
+    height: 0;
+    overflow: hidden;
+    transition: height 2s;
+}
+
+.weather-icon{
+    width: 200px;
+    margin-top: 30px;
+}
+.weather h1{
+    color:white;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.weather h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 550;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.col p{
+    color: white;
+    font-weight: 500;
+
+}
+
+.error{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.error img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.error div h3{
+    font-size: 20px;
+    padding: 10px auto;
+    color: white;
+}
+
+.error div p{
+    font-size: 18px;
+    color: black
+}
+
+@media only screen and (max-width:450px){
+    .search input{
+    padding: 10px 10px;
+    border-radius: 30px;
+    margin-right: 5px;
+    }
+
+    .humidity, .wind{
+        font-size: 15px;
+        margin-top: -6px;
+    }
+
+    .weather h1{
+        font-size: 60px;
+    }
+    .col {
+        width: 100%;
+    }
+    .col div{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .col img{
+        margin: 0px 8px;
+     }
+
+     .error img{
+        width: 50%;
+    }
+
+    .error div h3{
+        font-size: 15px;
+        margin: 10px auto;
+    }
+    .error div p{
+        font-size: 12px;
+        margin: 5px auto;
+    }
+
+}
